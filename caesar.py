@@ -1,6 +1,7 @@
 #!/usr/bin/python 
 #coding: utf-8
 # Caesar cipher
+# more: https://www.nayuki.io/page/automatic-caesar-cipher-breaker-javascript
 
 import sys
 
