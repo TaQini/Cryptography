@@ -23,7 +23,7 @@ def vigenere(msg, key, list):
     for char in msg:
         if char in list:
             tmp = list.index(char)
-            tmp += list.index(key[count % len(key)])
+            tmp -= list.index(key[count % len(key)])
             tmp %= 26
             count += 1
             result += list[tmp]

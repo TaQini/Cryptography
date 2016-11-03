@@ -9,13 +9,13 @@ def createlist(char,length):
         list.append(chr(ord(char)+i))
     return list
 
-def getoffset():
-    offset = eval(raw_input("Please input the offset: "))
-    return offset
-
 def getmessage():
     msg = raw_input("Please input the message: ")
     return msg
+
+def getoffset():
+    offset = eval(raw_input("Please input the offset: "))
+    return offset
 
 def caesar(msg,offset,list):
     result = ""
@@ -39,5 +39,8 @@ def main():
     result = caesar(result, offset, lower)
     result = caesar(result, offset, upper)
     print "Output: " + result
+
+# E(i) = (i+k) mod 26
+# D(i) = (i-k) mod 26
 
 main()
